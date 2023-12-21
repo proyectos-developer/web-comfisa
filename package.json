@@ -4,6 +4,7 @@
   "description": "Página web comfisa",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jorge Portocarrero",
@@ -23,5 +24,6 @@
     "path": "^0.12.7",
     "timeago": "^1.6.7",
     "timeago.js": "^4.0.2"
-  }
+  },
+  "repository": "https://github.com/proyectos-developer/web-comfisa"
 }

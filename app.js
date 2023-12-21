@@ -72,10 +72,9 @@ app.get ('/api', (req, res) => {
   res.sendFile(path.resolve(__dirname, './backend/views', 'profile'));
 })
 
-app.use(express.static(path.resolve(__dirname, './client')));
-
+app.use(express.static(path.resolve(__dirname, './client/build')));
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './client/build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, './client/build', 'index'));
 });
 app.get('/sobre-nosotros', (req, res) => {
   res.sendFile(path.resolve(__dirname, './client/build/sobre-nosotros', 'index.html'));
